@@ -34,6 +34,7 @@ class Point {
         }
         return 0;  // Successful translation
     }
+    ~Point(){}
 
 void printCoordinates() {
         cout << "Point Coordinates: (" << getX() << ", " << getY() << ", " << getZ() << ")\n";
@@ -66,6 +67,8 @@ public:
         vertex_2 = v2;
         vertex_3 = v3;
     }
+   
+   Triangle() : vertex_1(nullptr), vertex_2(nullptr),vertex_3(nullptr){} 
 
     ~Triangle() {
         delete vertex_1;

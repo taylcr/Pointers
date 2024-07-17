@@ -14,7 +14,7 @@ int* createArray(int size) {
 // Write a function initializeArray that takes a pointer to an array and its size, then initializes the array
 // with values from 0 to size-1.
 void initializeArray(int* arrayPtr, int size) {
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < size-1; i++) {
         arrayPtr[i] = i; // an array is just its first pointer address location
     }
 }
